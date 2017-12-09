@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankAccount.cs" />
+    <Compile Include="BankExceptions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -21,6 +21,7 @@ namespace ThreadingExampleApp
             if ((Balance - amount) < 0)
             {
                 Console.WriteLine("Cannot withdraw " + amount + "from account");
+                throw new BankExceptions();
                 
             }
 
@@ -28,7 +29,7 @@ namespace ThreadingExampleApp
             {
                 if (Balance >= amount)
                 {
-                    System.Threading.Thread.Sleep(2000);
+                    // System.Threading.Thread.Sleep(2000);
                     this.Balance -= amount;
                     Console.WriteLine("Withrawed {0} and {1} left in account", amount, this.Balance);
                 }
